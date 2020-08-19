@@ -12,7 +12,9 @@
 		1281AA3F24EDD1E800D24E0B /* Opening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1281AA3D24EDD1E800D24E0B /* Opening.storyboard */; };
 		1281AA4124EDD1EC00D24E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1281AA4024EDD1EC00D24E0B /* Assets.xcassets */; };
 		1281AA4424EDD1EC00D24E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1281AA4224EDD1EC00D24E0B /* LaunchScreen.storyboard */; };
-		1281AA5524EDD47100D24E0B /* Test file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281AA5424EDD47100D24E0B /* Test file.swift */; };
+		1281AA5924EDE3ED00D24E0B /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281AA5824EDE3ED00D24E0B /* OpeningViewController.swift */; };
+		1281AA5C24EDE42700D24E0B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281AA5B24EDE42700D24E0B /* CustomUI.swift */; };
+		1291853624EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		1281AA4024EDD1EC00D24E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1281AA4324EDD1EC00D24E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1281AA4524EDD1EC00D24E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1281AA5424EDD47100D24E0B /* Test file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test file.swift"; sourceTree = "<group>"; };
+		1281AA5824EDE3ED00D24E0B /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		1281AA5B24EDE42700D24E0B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomUI.swift; path = AnywhereFitness/Controllers/ViewControllers/CustomUI.swift; sourceTree = SOURCE_ROOT; };
+		1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = AnywhereFitnessOpeningVideo.mp4; path = "../../../../../AnywhereFitness Properties/AnywhereFitnessOpeningVideo.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		1281AA4B24EDD1F900D24E0B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1291853424EDE7D9004D0E93 /* Videos */,
 				1281AA3724EDD1E800D24E0B /* AppDelegate.swift */,
 				1281AA3924EDD1E800D24E0B /* SceneDelegate.swift */,
 				1281AA4024EDD1EC00D24E0B /* Assets.xcassets */,
@@ -87,6 +92,7 @@
 		1281AA4D24EDD21100D24E0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1281AA5A24EDE41C00D24E0B /* CustomUI */,
 				1281AA5124EDD23B00D24E0B /* Storyboards */,
 			);
 			path = Views;
@@ -102,7 +108,7 @@
 		1281AA4F24EDD22C00D24E0B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1281AA5424EDD47100D24E0B /* Test file.swift */,
+				1281AA5824EDE3ED00D24E0B /* OpeningViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +143,22 @@
 				1281AA4224EDD1EC00D24E0B /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		1281AA5A24EDE41C00D24E0B /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				1281AA5B24EDE42700D24E0B /* CustomUI.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		1291853424EDE7D9004D0E93 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1291853624EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 in Resources */,
 				1281AA4424EDD1EC00D24E0B /* LaunchScreen.storyboard in Resources */,
 				1281AA4124EDD1EC00D24E0B /* Assets.xcassets in Resources */,
 				1281AA3F24EDD1E800D24E0B /* Opening.storyboard in Resources */,
@@ -210,8 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1281AA5524EDD47100D24E0B /* Test file.swift in Sources */,
 				1281AA3824EDD1E800D24E0B /* AppDelegate.swift in Sources */,
+				1281AA5924EDE3ED00D24E0B /* OpeningViewController.swift in Sources */,
+				1281AA5C24EDE42700D24E0B /* CustomUI.swift in Sources */,
 				1281AA3A24EDD1E800D24E0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

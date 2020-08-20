@@ -12,8 +12,9 @@ import AVFoundation
 class OpeningViewController: UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet weak var userButton: UIButton!
-    @IBOutlet weak var trainerButton: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     //MARK: - Functionality Properties
     var player: AVPlayer?
@@ -24,6 +25,7 @@ class OpeningViewController: UIViewController {
         super.viewDidLoad()
         configureVideoBackground()
         configureButtons()
+        configureTextFields()
     }
     
     //MARK: - Helper Methods
@@ -45,7 +47,15 @@ class OpeningViewController: UIViewController {
     }
     
     func configureButtons() {
-        customUI.customDullButtonCorners(button: userButton)
-        customUI.customDullButtonCorners(button: trainerButton)
+        customUI.customDullButtonCorners(button: loginButton)
+    }
+    
+    func configureTextFields() {
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
+    }
+    
+    @IBAction func createUserButtonTapped(_ sender: UIButton) {
+        
     }
 }

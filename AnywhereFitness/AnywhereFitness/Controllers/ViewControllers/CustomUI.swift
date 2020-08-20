@@ -18,10 +18,6 @@ struct CustomUI {
         card.layer.shadowOffset = CGSize(width: 10, height: 10)
     }
     
-    func customTextField(textfield: UITextField) {
-        textfield.layer.cornerRadius = 10
-    }
-    
     func customDullButtonCorners(button: UIButton) {
         button.layer.cornerRadius = 10
     }

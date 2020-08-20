@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rt5-lp-lqa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="ple-od-1xh">
+            <objects>
+                <viewController id="aeD-Cn-UPh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lS6-fZ-wqa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="19i-8s-T5d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="f99-Ih-Jsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AV0-E5-kPM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="109.82142857142857"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MXp-MD-t97">
+            <objects>
+                <tabBarController storyboardIdentifier="SearchStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="rt5-lp-lqa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qS6-T7-o5h">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aeD-Cn-UPh" kind="relationship" relationship="viewControllers" id="sxd-xZ-QkD"/>
+                        <segue destination="yHV-T4-VHz" kind="relationship" relationship="viewControllers" destinationCreationSelector="ToUserProfileStoryboard" id="acx-1D-pVC"/>
+                        <segue destination="8sH-QA-UJm" kind="relationship" relationship="viewControllers" destinationCreationSelector="ToSettingsStoryboard" id="8zC-6e-UEb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfz-hh-gWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1.4492753623188408" y="109.82142857142857"/>
+        </scene>
+        <!--UserProfileStoryboard-->
+        <scene sceneID="I7e-ml-OlF">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UserProfileStoryboard" storyboardName="UserProfile" referencedIdentifier="UserProfileStoryboard" id="yHV-T4-VHz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OWm-fr-amC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPo-4J-wgb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="538"/>
+        </scene>
+        <!--SettingsStoryboard-->
+        <scene sceneID="vPw-S0-F64">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SettingsStoryboard" storyboardName="Settings" referencedIdentifier="SettingsStoryboard" id="8sH-QA-UJm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="OHy-w0-BsV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZIR-tn-qYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
+</document>

@@ -15,6 +15,9 @@
 		1281AA5924EDE3ED00D24E0B /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281AA5824EDE3ED00D24E0B /* OpeningViewController.swift */; };
 		1281AA5C24EDE42700D24E0B /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1281AA5B24EDE42700D24E0B /* CustomUI.swift */; };
 		1291853624EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */; };
+		12AB67D324EE3B5000AC2663 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AB67D224EE3B5000AC2663 /* Search.storyboard */; };
+		12AB67D724EE3C3A00AC2663 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AB67D624EE3C3A00AC2663 /* UserProfile.storyboard */; };
+		12AB67DA24EE3CF900AC2663 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AB67D924EE3CF900AC2663 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1281AA5824EDE3ED00D24E0B /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
 		1281AA5B24EDE42700D24E0B /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomUI.swift; path = AnywhereFitness/Controllers/ViewControllers/CustomUI.swift; sourceTree = SOURCE_ROOT; };
 		1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = AnywhereFitnessOpeningVideo.mp4; path = "../../../../../AnywhereFitness Properties/AnywhereFitnessOpeningVideo.mp4"; sourceTree = "<group>"; };
+		12AB67D224EE3B5000AC2663 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		12AB67D624EE3C3A00AC2663 /* UserProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		12AB67D924EE3CF900AC2663 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 		1281AA5124EDD23B00D24E0B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				12AB67D824EE3CEF00AC2663 /* Settings */,
+				12AB67D524EE3C2900AC2663 /* UserProfile */,
+				1291853724EE20DA004D0E93 /* Search */,
 				1281AA5324EDD25100D24E0B /* Launch */,
 				1281AA5224EDD24500D24E0B /* Opening */,
 			);
@@ -159,6 +168,30 @@
 				1291853524EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		1291853724EE20DA004D0E93 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				12AB67D224EE3B5000AC2663 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		12AB67D524EE3C2900AC2663 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				12AB67D624EE3C3A00AC2663 /* UserProfile.storyboard */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		12AB67D824EE3CEF00AC2663 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				12AB67D924EE3CF900AC2663 /* Settings.storyboard */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +255,10 @@
 				1291853624EDE807004D0E93 /* AnywhereFitnessOpeningVideo.mp4 in Resources */,
 				1281AA4424EDD1EC00D24E0B /* LaunchScreen.storyboard in Resources */,
 				1281AA4124EDD1EC00D24E0B /* Assets.xcassets in Resources */,
+				12AB67D724EE3C3A00AC2663 /* UserProfile.storyboard in Resources */,
 				1281AA3F24EDD1E800D24E0B /* Opening.storyboard in Resources */,
+				12AB67D324EE3B5000AC2663 /* Search.storyboard in Resources */,
+				12AB67DA24EE3CF900AC2663 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

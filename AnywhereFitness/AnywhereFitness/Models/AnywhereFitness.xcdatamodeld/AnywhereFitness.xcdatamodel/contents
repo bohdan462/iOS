@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Class" representedClassName="Class" syncable="YES" codeGenerationType="class">
+        <attribute name="attendees" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="intensity" attributeType="String"/>
+        <attribute name="location" attributeType="String"/>
+        <attribute name="maxClassSize" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="startTime" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="clients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Client" inverseName="classes" inverseEntity="Client"/>
+        <relationship name="instructor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Instructor" inverseName="classes" inverseEntity="Instructor"/>
+    </entity>
+    <entity name="Client" representedClassName="Client" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Class" inverseName="clients" inverseEntity="Class"/>
+    </entity>
+    <entity name="Instructor" representedClassName="Instructor" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="specialties" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Class" inverseName="instructor" inverseEntity="Class"/>
+    </entity>
+    <elements>
+        <element name="Client" positionX="-41.4921875" positionY="72.48046875" width="128" height="118"/>
+        <element name="Instructor" positionX="367.7421875" positionY="63.890625" width="128" height="133"/>
+        <element name="Class" positionX="166.328125" positionY="26.76953125" width="128" height="223"/>
+    </elements>
+</model>

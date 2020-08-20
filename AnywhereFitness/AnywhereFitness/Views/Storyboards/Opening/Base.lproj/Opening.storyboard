@@ -36,7 +36,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="171-GN-Zv8">
-                                        <rect key="frame" x="28" y="662" width="358" height="192"/>
+                                        <rect key="frame" x="28" y="642" width="358" height="212"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MfM-wZ-227">
                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
@@ -71,9 +71,12 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGI-9L-uzT">
-                                                <rect key="frame" x="0.0" y="114" width="358" height="40"/>
+                                                <rect key="frame" x="0.0" y="114" width="358" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="WZq-LK-fdR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                 <state key="normal" title="Log In">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -82,7 +85,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg0-pQ-kJZ">
-                                                <rect key="frame" x="0.0" y="162" width="358" height="30"/>
+                                                <rect key="frame" x="0.0" y="182" width="358" height="30"/>
                                                 <state key="normal" title="Don't have an acount? Create one here!">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>

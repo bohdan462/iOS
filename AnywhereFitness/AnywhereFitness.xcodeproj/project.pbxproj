@@ -13,6 +13,8 @@
 		1281AA4124EDD1EC00D24E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1281AA4024EDD1EC00D24E0B /* Assets.xcassets */; };
 		1281AA4424EDD1EC00D24E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1281AA4224EDD1EC00D24E0B /* LaunchScreen.storyboard */; };
 		1A2B82E524EE03B800815CA3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B82E424EE03B800815CA3 /* CoreDataStack.swift */; };
+		1A2B82E724EF564600815CA3 /* Class+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B82E624EF564600815CA3 /* Class+Convenience.swift */; };
+		1A2B82ED24EF56CC00815CA3 /* ClassRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B82EC24EF56CC00815CA3 /* ClassRepresentation.swift */; };
 		1A5C18DB24EDD76A00A7BE0F /* AnywhereFitness.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A5C18D924EDD76A00A7BE0F /* AnywhereFitness.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		1281AA4324EDD1EC00D24E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1281AA4524EDD1EC00D24E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A2B82E424EE03B800815CA3 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1A2B82E624EF564600815CA3 /* Class+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Class+Convenience.swift"; sourceTree = "<group>"; };
+		1A2B82EC24EF56CC00815CA3 /* ClassRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRepresentation.swift; sourceTree = "<group>"; };
 		1A5C18DA24EDD76A00A7BE0F /* AnywhereFitness.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnywhereFitness.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,8 @@
 			children = (
 				1A5C18D924EDD76A00A7BE0F /* AnywhereFitness.xcdatamodeld */,
 				1A2B82E424EE03B800815CA3 /* CoreDataStack.swift */,
+				1A2B82E624EF564600815CA3 /* Class+Convenience.swift */,
+				1A2B82EC24EF56CC00815CA3 /* ClassRepresentation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,9 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2B82E724EF564600815CA3 /* Class+Convenience.swift in Sources */,
 				1281AA3824EDD1E800D24E0B /* AppDelegate.swift in Sources */,
 				1A5C18DB24EDD76A00A7BE0F /* AnywhereFitness.xcdatamodeld in Sources */,
 				1281AA3A24EDD1E800D24E0B /* SceneDelegate.swift in Sources */,
+				1A2B82ED24EF56CC00815CA3 /* ClassRepresentation.swift in Sources */,
 				1A2B82E524EE03B800815CA3 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
